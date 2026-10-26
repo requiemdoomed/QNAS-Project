@@ -1,0 +1,366 @@
+{
+  "scan": [
+    {
+      "n_qubits": 2,
+      "template": "SEL, 2 layers (shallow)",
+      "cost": "z0",
+      "n_params": 12,
+      "var_mean": 0.06336643993430056,
+      "var_first": 0.10043797046203824,
+      "abs_mean": 0.14043740356619036,
+      "norm_mean": 0.8391476354638197,
+      "frac_small": 0.42333333333333334
+    },
+    {
+      "n_qubits": 2,
+      "template": "SEL, 2 layers (shallow)",
+      "cost": "global_z",
+      "n_params": 12,
+      "var_mean": 0.06605977066869606,
+      "var_first": 0.02608636549688862,
+      "abs_mean": 0.1409535532583357,
+      "norm_mean": 0.8553069855504944,
+      "frac_small": 0.3575
+    },
+    {
+      "n_qubits": 2,
+      "template": "SEL, n layers (depth grows with qubits)",
+      "cost": "z0",
+      "n_params": 12,
+      "var_mean": 0.06336643993430056,
+      "var_first": 0.10043797046203824,
+      "abs_mean": 0.14043740356619036,
+      "norm_mean": 0.8391476354638197,
+      "frac_small": 0.42333333333333334
+    },
+    {
+      "n_qubits": 2,
+      "template": "SEL, n layers (depth grows with qubits)",
+      "cost": "global_z",
+      "n_params": 12,
+      "var_mean": 0.06605977066869606,
+      "var_first": 0.02608636549688862,
+      "abs_mean": 0.1409535532583357,
+      "norm_mean": 0.8553069855504944,
+      "frac_small": 0.3575
+    },
+    {
+      "n_qubits": 4,
+      "template": "SEL, 2 layers (shallow)",
+      "cost": "z0",
+      "n_params": 24,
+      "var_mean": 0.01417629834791953,
+      "var_first": 0.004986233372918442,
+      "abs_mean": 0.05132582849260551,
+      "norm_mean": 0.5464748986600602,
+      "frac_small": 0.5275
+    },
+    {
+      "n_qubits": 4,
+      "template": "SEL, 2 layers (shallow)",
+      "cost": "global_z",
+      "n_params": 24,
+      "var_mean": 0.013112530515872904,
+      "var_first": 0.0185855871404267,
+      "abs_mean": 0.05845209281401325,
+      "norm_mean": 0.5249058649129839,
+      "frac_small": 0.38916666666666666
+    },
+    {
+      "n_qubits": 4,
+      "template": "SEL, n layers (depth grows with qubits)",
+      "cost": "z0",
+      "n_params": 48,
+      "var_mean": 0.025846884734659046,
+      "var_first": 0.01480865867712199,
+      "abs_mean": 0.11454330418322108,
+      "norm_mean": 1.096429863108856,
+      "frac_small": 0.13145833333333334
+    },
+    {
+      "n_qubits": 4,
+      "template": "SEL, n layers (depth grows with qubits)",
+      "cost": "global_z",
+      "n_params": 48,
+      "var_mean": 0.023642421475758513,
+      "var_first": 0.01681146427570946,
+      "abs_mean": 0.10662900676030743,
+      "norm_mean": 1.0570730814251794,
+      "frac_small": 0.17333333333333334
+    },
+    {
+      "n_qubits": 6,
+      "template": "SEL, 2 layers (shallow)",
+      "cost": "z0",
+      "n_params": 36,
+      "var_mean": 0.00660272693770433,
+      "var_first": 0.0006644484417230999,
+      "abs_mean": 0.03123498923551546,
+      "norm_mean": 0.45219031055177583,
+      "frac_small": 0.5133333333333333
+    },
+    {
+      "n_qubits": 6,
+      "template": "SEL, 2 layers (shallow)",
+      "cost": "global_z",
+      "n_params": 36,
+      "var_mean": 0.017071301447525215,
+      "var_first": 0.00033117350912092796,
+      "abs_mean": 0.05239633643225874,
+      "norm_mean": 0.7662580325507186,
+      "frac_small": 0.5630555555555555
+    },
+    {
+      "n_qubits": 6,
+      "template": "SEL, n layers (depth grows with qubits)",
+      "cost": "z0",
+      "n_params": 108,
+      "var_mean": 0.0067941455775104645,
+      "var_first": 0.003145926973305001,
+      "abs_mean": 0.0621547952593881,
+      "norm_mean": 0.855747556597931,
+      "frac_small": 0.0849074074074074
+    },
+    {
+      "n_qubits": 6,
+      "template": "SEL, n layers (depth grows with qubits)",
+      "cost": "global_z",
+      "n_params": 108,
+      "var_mean": 0.006719909214082755,
+      "var_first": 0.0038548274013429367,
+      "abs_mean": 0.060079806698207394,
+      "norm_mean": 0.8503959352010989,
+      "frac_small": 0.12194444444444444
+    },
+    {
+      "n_qubits": 8,
+      "template": "SEL, 2 layers (shallow)",
+      "cost": "z0",
+      "n_params": 48,
+      "var_mean": 0.0010591336334217268,
+      "var_first": 0.00019482927904157456,
+      "abs_mean": 0.012813373393515093,
+      "norm_mean": 0.19391741244461358,
+      "frac_small": 0.5235416666666667
+    },
+    {
+      "n_qubits": 8,
+      "template": "SEL, 2 layers (shallow)",
+      "cost": "global_z",
+      "n_params": 48,
+      "var_mean": 0.0010405429514562807,
+      "var_first": 0.0010757529701647581,
+      "abs_mean": 0.013707931246743741,
+      "norm_mean": 0.19109407721202032,
+      "frac_small": 0.46479166666666666
+    },
+    {
+      "n_qubits": 8,
+      "template": "SEL, n layers (depth grows with qubits)",
+      "cost": "z0",
+      "n_params": 192,
+      "var_mean": 0.0017845691119250083,
+      "var_first": 0.0006388551292638531,
+      "abs_mean": 0.032339069087159666,
+      "norm_mean": 0.5870566824932673,
+      "frac_small": 0.075625
+    },
+    {
+      "n_qubits": 8,
+      "template": "SEL, n layers (depth grows with qubits)",
+      "cost": "global_z",
+      "n_params": 192,
+      "var_mean": 0.0017069718630702308,
+      "var_first": 0.001151318343558339,
+      "abs_mean": 0.031173694330266042,
+      "norm_mean": 0.5739021639614946,
+      "frac_small": 0.10604166666666667
+    },
+    {
+      "n_qubits": 10,
+      "template": "SEL, 2 layers (shallow)",
+      "cost": "z0",
+      "n_params": 60,
+      "var_mean": 0.00034440506219444837,
+      "var_first": 4.905814431603009e-05,
+      "abs_mean": 0.006018429578895131,
+      "norm_mean": 0.10813990283196842,
+      "frac_small": 0.6035
+    },
+    {
+      "n_qubits": 10,
+      "template": "SEL, 2 layers (shallow)",
+      "cost": "global_z",
+      "n_params": 60,
+      "var_mean": 0.00232351528261444,
+      "var_first": 0.00016746814816818274,
+      "abs_mean": 0.01637735256449911,
+      "norm_mean": 0.32349613182058595,
+      "frac_small": 0.5733333333333334
+    },
+    {
+      "n_qubits": 10,
+      "template": "SEL, n layers (depth grows with qubits)",
+      "cost": "z0",
+      "n_params": 300,
+      "var_mean": 0.0004519825231134698,
+      "var_first": 0.0002529454773821879,
+      "abs_mean": 0.016456004313993647,
+      "norm_mean": 0.3690553125549242,
+      "frac_small": 0.07903333333333333
+    },
+    {
+      "n_qubits": 10,
+      "template": "SEL, n layers (depth grows with qubits)",
+      "cost": "global_z",
+      "n_params": 300,
+      "var_mean": 0.00044410365073564874,
+      "var_first": 0.00025841581158104695,
+      "abs_mean": 0.016040495283813013,
+      "norm_mean": 0.3665130906369765,
+      "frac_small": 0.10593333333333334
+    }
+  ],
+  "candidates": [
+    {
+      "circuit": "QNAS-bestF",
+      "init": "uniform",
+      "n_params": 1,
+      "var_mean": 0.09928661486582606,
+      "var_first": 0.09928661486582606,
+      "abs_mean": 0.2276974507083919,
+      "norm_mean": 0.2276974507083919,
+      "frac_small": 0.0
+    },
+    {
+      "circuit": "QNAS-bestF",
+      "init": "small",
+      "n_params": 1,
+      "var_mean": 0.15262670477202914,
+      "var_first": 0.15262670477202914,
+      "abs_mean": 0.32209968008544115,
+      "norm_mean": 0.32209968008544115,
+      "frac_small": 0.0
+    },
+    {
+      "circuit": "QNAS-accurate",
+      "init": "uniform",
+      "n_params": 5,
+      "var_mean": 0.0318803698381188,
+      "var_first": 1.4058984779246659e-33,
+      "abs_mean": 0.09608531381614908,
+      "norm_mean": 0.3423837952277509,
+      "frac_small": 0.41
+    },
+    {
+      "circuit": "QNAS-accurate",
+      "init": "small",
+      "n_params": 5,
+      "var_mean": 0.03315148475489634,
+      "var_first": 3.2047677455150256e-34,
+      "abs_mean": 0.09488129439190035,
+      "norm_mean": 0.33597465227093615,
+      "frac_small": 0.408
+    },
+    {
+      "circuit": "QNAS-compact",
+      "init": "uniform",
+      "n_params": 3,
+      "var_mean": 0.038184574432241415,
+      "var_first": 0.03928093994273234,
+      "abs_mean": 0.12433717448585796,
+      "norm_mean": 0.26669303150518575,
+      "frac_small": 0.03333333333333333
+    },
+    {
+      "circuit": "QNAS-compact",
+      "init": "small",
+      "n_params": 3,
+      "var_mean": 0.05153407270825248,
+      "var_first": 0.14851723318310028,
+      "abs_mean": 0.13116881247386505,
+      "norm_mean": 0.32885130437904836,
+      "frac_small": 0.05
+    },
+    {
+      "circuit": "SEL-L1",
+      "init": "uniform",
+      "n_params": 12,
+      "var_mean": 0.012296080791086588,
+      "var_first": 3.899858234675708e-33,
+      "abs_mean": 0.04895784048129882,
+      "norm_mean": 0.33161865190412265,
+      "frac_small": 0.5225
+    },
+    {
+      "circuit": "SEL-L1",
+      "init": "small",
+      "n_params": 12,
+      "var_mean": 0.010376010291447033,
+      "var_first": 1.3481015953546912e-33,
+      "abs_mean": 0.038171763629652404,
+      "norm_mean": 0.30470154876053945,
+      "frac_small": 0.5933333333333334
+    },
+    {
+      "circuit": "SEL-L2",
+      "init": "uniform",
+      "n_params": 24,
+      "var_mean": 0.013718359463064432,
+      "var_first": 0.016005085204253092,
+      "abs_mean": 0.05142754083108746,
+      "norm_mean": 0.5347027099683465,
+      "frac_small": 0.5241666666666667
+    },
+    {
+      "circuit": "SEL-L2",
+      "init": "small",
+      "n_params": 24,
+      "var_mean": 0.008766366877854611,
+      "var_first": 0.0007241648981992178,
+      "abs_mean": 0.054070852868356445,
+      "norm_mean": 0.6874434555210032,
+      "frac_small": 0.5375
+    },
+    {
+      "circuit": "SEL-L3",
+      "init": "uniform",
+      "n_params": 36,
+      "var_mean": 0.022494849195211823,
+      "var_first": 0.021671693736392633,
+      "abs_mean": 0.09310417151327187,
+      "norm_mean": 0.8812134623074503,
+      "frac_small": 0.23555555555555555
+    },
+    {
+      "circuit": "SEL-L3",
+      "init": "small",
+      "n_params": 36,
+      "var_mean": 0.010075653851712822,
+      "var_first": 0.0031774507175957862,
+      "abs_mean": 0.06595399137435529,
+      "norm_mean": 0.8908935884763526,
+      "frac_small": 0.25333333333333335
+    },
+    {
+      "circuit": "BEL-L2",
+      "init": "uniform",
+      "n_params": 8,
+      "var_mean": 0.0005446366821575952,
+      "var_first": 0.0009025378715111177,
+      "abs_mean": 0.010625263772702889,
+      "norm_mean": 0.04257645633051363,
+      "frac_small": 0.4025
+    },
+    {
+      "circuit": "BEL-L2",
+      "init": "small",
+      "n_params": 8,
+      "var_mean": 0.0004638510185878721,
+      "var_first": 0.00033985941107569424,
+      "abs_mean": 0.009282446233035759,
+      "norm_mean": 0.03645498639547514,
+      "frac_small": 0.4425
+    }
+  ]
+}

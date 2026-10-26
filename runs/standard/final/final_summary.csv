@@ -1,0 +1,16 @@
+model,kind,test_acc_mean,test_acc_std,val_acc_mean,test_bal_acc_mean,n_params,n_2q,depth,n_gates
+SEL-L3,quantum,0.8389,0.0094,0.8201,0.8381,38,12,19,48
+QNAS-accurate-full,quantum,0.8361,0.0083,0.8139,0.8352,26,10,16,38
+SEL-L2,quantum,0.8039,0.0131,0.7983,0.8030,26,8,12,32
+MLP-SEL2,mlp,0.7994,0.0330,0.7838,0.7976,25,0,0,0
+MLP-matched,mlp,0.7900,0.0321,0.7682,0.7879,13,0,0,0
+QNAS-compact,quantum,0.7711,0.0142,0.7749,0.7711,5,4,6,8
+QNAS-compact-full,quantum,0.7628,0.0203,0.7727,0.7630,16,5,11,21
+QNAS-accurate,quantum,0.7389,0.0065,0.7454,0.7382,7,5,8,10
+QNAS-bestF,quantum,0.7311,0.0063,0.7588,0.7307,3,1,2,2
+QNAS-bestF-full,quantum,0.7256,0.0178,0.7415,0.7253,8,1,3,8
+Linear,linear,0.6789,0.0099,0.6646,0.6786,5,0,0,0
+SEL-L1,quantum,0.6061,0.0478,0.6117,0.6053,14,4,7,16
+BEL-L2,quantum,0.5561,0.0189,0.5777,0.5570,10,8,10,16
+BEL-L3,quantum,0.5044,0.0624,0.5220,0.5054,14,12,15,24
+BEL-L1,quantum,0.4833,0.0197,0.5031,0.4838,6,4,5,8

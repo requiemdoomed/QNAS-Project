@@ -1,0 +1,71 @@
+{
+  "dataset": "digits",
+  "classes": [
+    [
+      0,
+      2,
+      4,
+      6,
+      8
+    ],
+    [
+      1,
+      3,
+      5,
+      7,
+      9
+    ]
+  ],
+  "extractor": "cnn",
+  "ae_epochs": 30,
+  "data_root": "data",
+  "medmnist_size": 28,
+  "max_per_class": null,
+  "n_qubits": 4,
+  "max_depth": 20,
+  "max_genes": 48,
+  "init_max_genes": 14,
+  "connectivity": "all",
+  "allow_data": false,
+  "mode": "nsga2",
+  "objectives": [
+    "acc",
+    "depth",
+    "n2q"
+  ],
+  "pop_size": 10,
+  "generations": 6,
+  "p_crossover": 0.8,
+  "p_mutation": 0.2,
+  "p_insert": 0.25,
+  "p_delete": 0.2,
+  "warm_start": true,
+  "epochs": 3,
+  "batch_size": 64,
+  "lr": 0.1,
+  "init_std": 0.3,
+  "alpha": 1.0,
+  "beta": 0.1,
+  "gamma": 0.2,
+  "final_epochs": 12,
+  "final_seeds": 2,
+  "prune": true,
+  "prune_seeds": 1,
+  "prune_tolerance": 0.005,
+  "grad_qubits": [
+    2,
+    4,
+    6
+  ],
+  "grad_samples": 50,
+  "noise": true,
+  "noise_p": [
+    0.0,
+    0.001,
+    0.003,
+    0.01,
+    0.03
+  ],
+  "seed": 0,
+  "workers": 2
+}

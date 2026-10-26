@@ -1,0 +1,58 @@
+{
+  "search": {
+    "pop_size": 10,
+    "generations": 6,
+    "p_crossover": 0.8,
+    "p_mutation": 0.2,
+    "p_insert": 0.25,
+    "p_delete": 0.2,
+    "mode": "nsga2",
+    "objectives": [
+      "acc",
+      "depth",
+      "n2q"
+    ],
+    "tournament_size": 3,
+    "seed": 0,
+    "workers": 2
+  },
+  "spec": {
+    "n_qubits": 4,
+    "n_features": 4,
+    "max_depth": 20,
+    "max_genes": 48,
+    "alpha": 1.0,
+    "beta": 0.1,
+    "gamma": 0.2,
+    "train": {
+      "epochs": 3,
+      "batch_size": 64,
+      "lr": 0.1,
+      "init_std": 0.3,
+      "weight_decay": 0.0
+    },
+    "base_seed": 0,
+    "observable": "z0"
+  },
+  "space": {
+    "n_qubits": 4,
+    "n_features": 4,
+    "max_depth": 20,
+    "max_genes": 48,
+    "init_max_genes": 14,
+    "connectivity": "all",
+    "gate_set": [
+      "RX",
+      "RY",
+      "RZ",
+      "H",
+      "CNOT",
+      "CZ",
+      "SWAP"
+    ],
+    "allow_data": false,
+    "allow_fixed": true,
+    "p_two_qubit": 0.35,
+    "p_hadamard": 0.08
+  }
+}

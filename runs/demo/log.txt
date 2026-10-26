@@ -1,0 +1,131 @@
+task: digits [[0, 2, 4, 6, 8], [1, 3, 5, 7, 9]] | extractor=cnn | sizes={'train': 1078, 'val': 359, 'test': 360} | 4 qubits | mode=nsga2 | pop=10 gens=6 epochs=3
+gen   0/6 | evals   10 (+10 ) | best acc 0.783 | best F 0.673 | mean 2q 5.6 depth 7.9 | front  5 | HV 0.5590 | 9s
+gen   1/6 | evals   20 (+10 ) | best acc 0.783 | best F 0.673 | mean 2q 6.1 depth 9.7 | front  5 | HV 0.5838 | 12s
+gen   2/6 | evals   29 (+9  ) | best acc 0.811 | best F 0.673 | mean 2q 6.9 depth 12.4 | front  5 | HV 0.6404 | 14s
+gen   3/6 | evals   39 (+10 ) | best acc 0.811 | best F 0.673 | mean 2q 6.6 depth 13.2 | front  6 | HV 0.6442 | 17s
+gen   4/6 | evals   47 (+8  ) | best acc 0.811 | best F 0.673 | mean 2q 7.0 depth 13.1 | front  7 | HV 0.6459 | 21s
+gen   5/6 | evals   57 (+10 ) | best acc 0.811 | best F 0.673 | mean 2q 6.7 depth 13.2 | front  8 | HV 0.6459 | 24s
+gen   6/6 | evals   67 (+10 ) | best acc 0.811 | best F 0.673 | mean 2q 6.4 depth 12.1 | front 11 | HV 0.6778 | 28s
+evaluating hand-crafted baselines with the search protocol ...
+  SEL-L1  acc 0.618 | depth  7 | 2q  4 | params  14
+  SEL-L2  acc 0.766 | depth 12 | 2q  8 | params  26
+  SEL-L3  acc 0.783 | depth 19 | 2q 12 | params  38
+  BEL-L1  acc 0.543 | depth  5 | 2q  4 | params   6
+  BEL-L2  acc 0.613 | depth 10 | 2q  8 | params  10
+  BEL-L3  acc 0.507 | depth 15 | 2q 12 | params  14
+selected candidates from the Pareto front:
+  pruning QNAS-bestF (32 gates, 8 two-qubit) ...
+  pruned CNOT[3,1]: acc 0.752 (ref 0.708), 31 gates left
+  pruned CNOT[1,3]: acc 0.774 (ref 0.708), 30 gates left
+  pruned CNOT[0,2]: acc 0.752 (ref 0.708), 29 gates left
+  pruned CNOT[2,0]: acc 0.733 (ref 0.708), 28 gates left
+  pruned CNOT[2,3]: acc 0.780 (ref 0.708), 27 gates left
+  pruned CNOT[1,2]: acc 0.758 (ref 0.708), 25 gates left
+  pruned CNOT[0,1]: acc 0.777 (ref 0.708), 23 gates left
+  pruned RZ(θ)[3]: acc 0.780 (ref 0.708), 22 gates left
+  pruned RY(θ)[3]: acc 0.783 (ref 0.708), 21 gates left
+  pruned RZ(θ)[3]: acc 0.760 (ref 0.708), 20 gates left
+  pruned RZ(θ)[2]: acc 0.724 (ref 0.708), 19 gates left
+  pruned RY(θ)[2]: acc 0.744 (ref 0.708), 18 gates left
+  pruned RZ(θ)[1]: acc 0.758 (ref 0.708), 17 gates left
+  pruned RY(θ)[1]: acc 0.733 (ref 0.708), 16 gates left
+  pruned RZ(θ)[0]: acc 0.749 (ref 0.708), 15 gates left
+  pruned RY(θ)[0]: acc 0.763 (ref 0.708), 14 gates left
+  pruned RZ(θ)[0]: acc 0.760 (ref 0.708), 13 gates left
+  pruned RZ(θ)[3]: acc 0.758 (ref 0.708), 12 gates left
+  pruned RZ(θ)[3]: acc 0.755 (ref 0.708), 11 gates left
+  pruned RZ(θ)[2]: acc 0.763 (ref 0.708), 10 gates left
+  pruned RY(θ)[2]: acc 0.758 (ref 0.708), 9 gates left
+  pruned RZ(θ)[2]: acc 0.724 (ref 0.708), 8 gates left
+  pruned RZ(θ)[1]: acc 0.758 (ref 0.708), 7 gates left
+  pruned RY(θ)[1]: acc 0.769 (ref 0.708), 6 gates left
+  pruned RZ(θ)[1]: acc 0.760 (ref 0.708), 5 gates left
+  pruned RZ(θ)[0]: acc 0.758 (ref 0.708), 4 gates left
+  pruned RY(θ)[0]: acc 0.755 (ref 0.708), 3 gates left
+  pruned RZ(θ)[0]: acc 0.752 (ref 0.708), 2 gates left
+  QNAS-bestF: gates 32->2 | 2q 8->1 | depth 12->2
+  pruning QNAS-accurate (44 gates, 10 two-qubit) ...
+  pruned CNOT[1,0]: acc 0.791 (ref 0.749), 42 gates left
+  pruned CNOT[2,0]: acc 0.772 (ref 0.749), 41 gates left
+  pruned CNOT[3,1]: acc 0.774 (ref 0.749), 39 gates left
+  pruned CNOT[1,3]: acc 0.769 (ref 0.749), 38 gates left
+  pruned CZ[2,3]: acc 0.755 (ref 0.749), 36 gates left
+  pruned CNOT[1,0]: acc 0.772 (ref 0.749), 33 gates left
+  pruned CNOT[3,0]: acc 0.758 (ref 0.749), 31 gates left
+  pruned CNOT[1,2]: acc 0.747 (ref 0.749), 30 gates left
+  pruned RZ(θ)[0]: acc 0.755 (ref 0.749), 28 gates left
+  pruned RY(θ)[0]: acc 0.752 (ref 0.749), 27 gates left
+  pruned RZ(θ)[2]: acc 0.747 (ref 0.749), 26 gates left
+  pruned RZ(θ)[1]: acc 0.747 (ref 0.749), 24 gates left
+  pruned RZ(θ)[3]: acc 0.755 (ref 0.749), 22 gates left
+  pruned RZ(θ)[3]: acc 0.747 (ref 0.749), 21 gates left
+  pruned RZ(θ)[1]: acc 0.755 (ref 0.749), 20 gates left
+  QNAS-accurate: gates 44->20 | 2q 10->2 | depth 20->8
+  pruning QNAS-compact (44 gates, 10 two-qubit) ...
+  pruned CNOT[1,0]: acc 0.791 (ref 0.749), 42 gates left
+  pruned CNOT[2,0]: acc 0.772 (ref 0.749), 41 gates left
+  pruned CNOT[3,1]: acc 0.774 (ref 0.749), 39 gates left
+  pruned CNOT[1,3]: acc 0.769 (ref 0.749), 38 gates left
+  pruned CZ[2,3]: acc 0.755 (ref 0.749), 36 gates left
+  pruned CNOT[1,0]: acc 0.772 (ref 0.749), 33 gates left
+  pruned CNOT[3,0]: acc 0.758 (ref 0.749), 31 gates left
+  pruned CNOT[1,2]: acc 0.747 (ref 0.749), 30 gates left
+  pruned RZ(θ)[0]: acc 0.755 (ref 0.749), 28 gates left
+  pruned RY(θ)[0]: acc 0.752 (ref 0.749), 27 gates left
+  pruned RZ(θ)[2]: acc 0.747 (ref 0.749), 26 gates left
+  pruned RZ(θ)[1]: acc 0.747 (ref 0.749), 24 gates left
+  pruned RZ(θ)[3]: acc 0.755 (ref 0.749), 22 gates left
+  pruned RZ(θ)[3]: acc 0.747 (ref 0.749), 21 gates left
+  pruned RZ(θ)[1]: acc 0.755 (ref 0.749), 20 gates left
+  QNAS-compact: gates 44->20 | 2q 10->2 | depth 20->8
+final evaluation: 30 training runs (12 epochs each) on 2 worker(s)
+  3/30 runs done
+  6/30 runs done
+  9/30 runs done
+  12/30 runs done
+  15/30 runs done
+  18/30 runs done
+  21/30 runs done
+  24/30 runs done
+  27/30 runs done
+  30/30 runs done
+  SEL-L3         test acc  80.7% ± 2.9 | 2q 12 | depth 19 | params  38
+  QNAS-accurate-full test acc  78.8% ± 1.8 | 2q 10 | depth 20 | params  35
+  QNAS-compact-full test acc  78.8% ± 1.8 | 2q 10 | depth 20 | params  35
+  QNAS-bestF-full test acc  78.2% ± 2.2 | 2q  8 | depth 12 | params  26
+  SEL-L2         test acc  78.2% ± 2.2 | 2q  8 | depth 12 | params  26
+  MLP-matched    test acc  76.0% ± 0.6 | 2q  0 | depth  0 | params  13
+  MLP-SEL2       test acc  75.8% ± 0.0 | 2q  0 | depth  0 | params  25
+  QNAS-bestF     test acc  74.0% ± 0.6 | 2q  1 | depth  2 | params   3
+  QNAS-accurate  test acc  73.9% ± 2.0 | 2q  2 | depth  8 | params  20
+  QNAS-compact   test acc  73.9% ± 2.0 | 2q  2 | depth  8 | params  20
+  Linear         test acc  68.6% ± 0.8 | 2q  0 | depth  0 | params   5
+  SEL-L1         test acc  61.8% ± 0.2 | 2q  4 | depth  7 | params  14
+  BEL-L2         test acc  60.0% ± 0.8 | 2q  8 | depth 10 | params  10
+  BEL-L1         test acc  53.8% ± 0.6 | 2q  4 | depth  5 | params   6
+  BEL-L3         test acc  53.2% ± 1.0 | 2q 12 | depth 15 | params  14
+barren-plateau scan ...
+  n=2 SEL, 2 layers (shallow)                    cost=z0       Var[grad]=6.134e-02
+  n=2 SEL, 2 layers (shallow)                    cost=global_z Var[grad]=6.055e-02
+  n=2 SEL, n layers (depth grows with qubits)    cost=z0       Var[grad]=6.134e-02
+  n=2 SEL, n layers (depth grows with qubits)    cost=global_z Var[grad]=6.055e-02
+  n=4 SEL, 2 layers (shallow)                    cost=z0       Var[grad]=1.232e-02
+  n=4 SEL, 2 layers (shallow)                    cost=global_z Var[grad]=1.648e-02
+  n=4 SEL, n layers (depth grows with qubits)    cost=z0       Var[grad]=2.329e-02
+  n=4 SEL, n layers (depth grows with qubits)    cost=global_z Var[grad]=2.300e-02
+  n=6 SEL, 2 layers (shallow)                    cost=z0       Var[grad]=7.775e-03
+  n=6 SEL, 2 layers (shallow)                    cost=global_z Var[grad]=1.578e-02
+  n=6 SEL, n layers (depth grows with qubits)    cost=z0       Var[grad]=7.002e-03
+  n=6 SEL, n layers (depth grows with qubits)    cost=global_z Var[grad]=6.122e-03
+noisy-hardware sweep (default.mixed) ...
+  QNAS-bestF     p=0      acc 0.713
+  QNAS-bestF     p=0.03   acc 0.727
+  QNAS-accurate  p=0      acc 0.740
+  QNAS-accurate  p=0.03   acc 0.713
+  QNAS-compact   p=0      acc 0.740
+  QNAS-compact   p=0.03   acc 0.713
+  SEL-L2         p=0      acc 0.767
+  SEL-L2         p=0.03   acc 0.520
+  BEL-L2         p=0      acc 0.600
+  BEL-L2         p=0.03   acc 0.507
+done in 237s -> runs/demo/results.md

@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qnas"
+version = "1.1.0"
+description = "Evolutionary quantum neural architecture search for hybrid quantum-classical classifiers (PennyLane + PyTorch + DEAP)"
+requires-python = ">=3.10"
+authors = [{ name = "Swayam Shakya" }]
+readme = "README.md"
+license = { text = "MIT" }
+keywords = ["quantum machine learning", "neural architecture search", "pennylane", "nsga-ii", "barren plateaus"]
+dependencies = ["numpy", "scipy", "scikit-learn", "torch", "pennylane", "deap", "matplotlib"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+medmnist = ["medmnist"]
+
+[project.scripts]
+qnas = "qnas.cli:main"
+
+[tool.setuptools]
+packages = ["qnas"]

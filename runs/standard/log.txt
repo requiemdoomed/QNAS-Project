@@ -1,0 +1,162 @@
+task: digits [[0, 2, 4, 6, 8], [1, 3, 5, 7, 9]] | extractor=cnn | sizes={'train': 1078, 'val': 359, 'test': 360} | 4 qubits | mode=nsga2 | pop=30 gens=40 epochs=5
+gen   0/40 | evals   30 (+30 ) | best acc 0.791 | best F 0.653 | mean 2q 4.2 depth 6.2 | front  3 | HV 0.6322 | 17s
+gen   1/40 | evals   58 (+28 ) | best acc 0.791 | best F 0.661 | mean 2q 2.7 depth 4.4 | front  6 | HV 0.6748 | 25s
+gen   2/40 | evals   86 (+28 ) | best acc 0.791 | best F 0.661 | mean 2q 2.9 depth 5.1 | front  7 | HV 0.6750 | 33s
+gen   3/40 | evals  109 (+23 ) | best acc 0.791 | best F 0.664 | mean 2q 3.4 depth 6.3 | front  5 | HV 0.6750 | 39s
+gen   4/40 | evals  135 (+26 ) | best acc 0.791 | best F 0.695 | mean 2q 6.7 depth 11.9 | front  8 | HV 0.6901 | 53s
+gen   5/40 | evals  161 (+26 ) | best acc 0.794 | best F 0.695 | mean 2q 7.5 depth 13.9 | front 10 | HV 0.6902 | 69s
+gen   6/40 | evals  190 (+29 ) | best acc 0.797 | best F 0.695 | mean 2q 7.5 depth 13.4 | front 12 | HV 0.6935 | 84s
+gen   7/40 | evals  220 (+30 ) | best acc 0.802 | best F 0.696 | mean 2q 7.5 depth 14.0 | front  7 | HV 0.7051 | 101s
+gen   8/40 | evals  250 (+30 ) | best acc 0.802 | best F 0.696 | mean 2q 7.2 depth 13.7 | front  9 | HV 0.7056 | 118s
+gen   9/40 | evals  280 (+30 ) | best acc 0.802 | best F 0.724 | mean 2q 7.0 depth 13.1 | front  6 | HV 0.7159 | 134s
+gen  10/40 | evals  308 (+28 ) | best acc 0.802 | best F 0.724 | mean 2q 6.5 depth 12.7 | front  9 | HV 0.7179 | 146s
+gen  11/40 | evals  338 (+30 ) | best acc 0.802 | best F 0.724 | mean 2q 6.2 depth 12.6 | front  9 | HV 0.7196 | 160s
+gen  12/40 | evals  367 (+29 ) | best acc 0.802 | best F 0.724 | mean 2q 5.8 depth 11.8 | front 10 | HV 0.7197 | 174s
+gen  13/40 | evals  396 (+29 ) | best acc 0.802 | best F 0.724 | mean 2q 5.1 depth 11.2 | front  8 | HV 0.7207 | 189s
+gen  14/40 | evals  423 (+27 ) | best acc 0.802 | best F 0.733 | mean 2q 5.3 depth 11.3 | front  6 | HV 0.7269 | 202s
+gen  15/40 | evals  453 (+30 ) | best acc 0.802 | best F 0.733 | mean 2q 4.9 depth 10.4 | front  7 | HV 0.7288 | 215s
+gen  16/40 | evals  483 (+30 ) | best acc 0.808 | best F 0.741 | mean 2q 5.0 depth 10.5 | front 10 | HV 0.7340 | 229s
+gen  17/40 | evals  512 (+29 ) | best acc 0.808 | best F 0.741 | mean 2q 5.1 depth 10.8 | front 10 | HV 0.7340 | 243s
+gen  18/40 | evals  538 (+26 ) | best acc 0.808 | best F 0.741 | mean 2q 4.9 depth 10.5 | front 10 | HV 0.7340 | 256s
+gen  19/40 | evals  568 (+30 ) | best acc 0.808 | best F 0.741 | mean 2q 4.8 depth 10.5 | front  9 | HV 0.7341 | 272s
+gen  20/40 | evals  598 (+30 ) | best acc 0.808 | best F 0.741 | mean 2q 4.8 depth 10.2 | front  9 | HV 0.7341 | 285s
+gen  21/40 | evals  626 (+28 ) | best acc 0.808 | best F 0.741 | mean 2q 4.6 depth 10.6 | front 11 | HV 0.7341 | 300s
+gen  22/40 | evals  656 (+30 ) | best acc 0.808 | best F 0.741 | mean 2q 4.3 depth 10.4 | front 11 | HV 0.7341 | 315s
+gen  23/40 | evals  684 (+28 ) | best acc 0.808 | best F 0.747 | mean 2q 4.2 depth 10.3 | front  9 | HV 0.7367 | 329s
+gen  24/40 | evals  714 (+30 ) | best acc 0.808 | best F 0.747 | mean 2q 4.2 depth 10.1 | front  9 | HV 0.7374 | 343s
+gen  25/40 | evals  744 (+30 ) | best acc 0.808 | best F 0.747 | mean 2q 4.4 depth 10.5 | front 10 | HV 0.7374 | 356s
+gen  26/40 | evals  774 (+30 ) | best acc 0.808 | best F 0.747 | mean 2q 4.3 depth 10.1 | front 10 | HV 0.7374 | 369s
+gen  27/40 | evals  802 (+28 ) | best acc 0.808 | best F 0.747 | mean 2q 4.2 depth 9.8 | front 10 | HV 0.7374 | 380s
+gen  28/40 | evals  831 (+29 ) | best acc 0.808 | best F 0.747 | mean 2q 4.2 depth 9.8 | front 10 | HV 0.7374 | 394s
+gen  29/40 | evals  860 (+29 ) | best acc 0.808 | best F 0.747 | mean 2q 4.2 depth 9.9 | front 10 | HV 0.7374 | 408s
+gen  30/40 | evals  888 (+28 ) | best acc 0.808 | best F 0.747 | mean 2q 4.2 depth 9.9 | front 10 | HV 0.7374 | 421s
+gen  31/40 | evals  916 (+28 ) | best acc 0.808 | best F 0.747 | mean 2q 4.2 depth 9.9 | front 11 | HV 0.7376 | 434s
+gen  32/40 | evals  946 (+30 ) | best acc 0.808 | best F 0.747 | mean 2q 4.2 depth 9.8 | front 11 | HV 0.7407 | 445s
+gen  33/40 | evals  973 (+27 ) | best acc 0.811 | best F 0.747 | mean 2q 4.1 depth 9.5 | front 10 | HV 0.7432 | 457s
+gen  34/40 | evals 1003 (+30 ) | best acc 0.813 | best F 0.747 | mean 2q 4.1 depth 9.5 | front 10 | HV 0.7436 | 470s
+gen  35/40 | evals 1031 (+28 ) | best acc 0.813 | best F 0.747 | mean 2q 4.1 depth 9.5 | front 10 | HV 0.7436 | 483s
+gen  36/40 | evals 1060 (+29 ) | best acc 0.813 | best F 0.747 | mean 2q 4.1 depth 9.5 | front 10 | HV 0.7436 | 496s
+gen  37/40 | evals 1089 (+29 ) | best acc 0.813 | best F 0.747 | mean 2q 4.1 depth 9.4 | front 10 | HV 0.7440 | 507s
+gen  38/40 | evals 1119 (+30 ) | best acc 0.813 | best F 0.747 | mean 2q 4.0 depth 8.8 | front 10 | HV 0.7443 | 522s
+gen  39/40 | evals 1149 (+30 ) | best acc 0.813 | best F 0.758 | mean 2q 4.2 depth 9.1 | front  9 | HV 0.7459 | 535s
+gen  40/40 | evals 1176 (+27 ) | best acc 0.813 | best F 0.758 | mean 2q 4.2 depth 9.1 | front  9 | HV 0.7459 | 544s
+evaluating hand-crafted baselines with the search protocol ...
+  SEL-L1  acc 0.602 | depth  7 | 2q  4 | params  14
+  SEL-L2  acc 0.744 | depth 12 | 2q  8 | params  26
+  SEL-L3  acc 0.791 | depth 19 | 2q 12 | params  38
+  BEL-L1  acc 0.504 | depth  5 | 2q  4 | params   6
+  BEL-L2  acc 0.585 | depth 10 | 2q  8 | params  10
+  BEL-L3  acc 0.524 | depth 15 | 2q 12 | params  14
+selected candidates from the Pareto front:
+  pruning QNAS-bestF (9 gates, 1 two-qubit) ...
+  pruned RY(θ)[0]: acc 0.757 (ref 0.721), 7 gates left
+  pruned RX(θ)[0]: acc 0.760 (ref 0.721), 6 gates left
+  pruned RX(θ)[3]: acc 0.760 (ref 0.721), 5 gates left
+  pruned RX(θ)[1]: acc 0.758 (ref 0.721), 4 gates left
+  pruned H[2]: acc 0.761 (ref 0.721), 3 gates left
+  pruned RX(θ)[2]: acc 0.758 (ref 0.721), 2 gates left
+  QNAS-bestF: gates 9->2 | 2q 1->1 | depth 3->2
+  pruning QNAS-accurate (41 gates, 10 two-qubit) ...
+  pruned CNOT[2,3]: acc 0.769 (ref 0.750), 37 gates left
+  pruned CNOT[3,0]: acc 0.763 (ref 0.750), 36 gates left
+  pruned CNOT[1,2]: acc 0.772 (ref 0.750), 34 gates left
+  pruned CNOT[3,1]: acc 0.747 (ref 0.750), 33 gates left
+  pruned CNOT[3,0]: acc 0.767 (ref 0.750), 32 gates left
+  pruned RZ(θ)[1]: acc 0.763 (ref 0.750), 31 gates left
+  pruned RY(θ)[3]: acc 0.771 (ref 0.750), 30 gates left
+  pruned RZ(θ)[3]: acc 0.775 (ref 0.750), 29 gates left
+  pruned RY(θ)[1]: acc 0.775 (ref 0.750), 28 gates left
+  pruned H[1]: acc 0.759 (ref 0.750), 27 gates left
+  pruned RX(θ)[0]: acc 0.766 (ref 0.750), 26 gates left
+  pruned RY(θ)[3]: acc 0.759 (ref 0.750), 25 gates left
+  pruned RZ(θ)[3]: acc 0.763 (ref 0.750), 24 gates left
+  pruned RZ(θ)[2]: acc 0.752 (ref 0.750), 23 gates left
+  pruned RZ(θ)[2]: acc 0.766 (ref 0.750), 22 gates left
+  pruned RZ(θ)[1]: acc 0.763 (ref 0.750), 21 gates left
+  pruned RY(θ)[1]: acc 0.754 (ref 0.750), 20 gates left
+  pruned H[2]: acc 0.775 (ref 0.750), 19 gates left
+  pruned RY(θ)[2]: acc 0.750 (ref 0.750), 18 gates left
+  pruned RZ(θ)[1]: acc 0.747 (ref 0.750), 17 gates left
+  pruned RY(π/2)[0]: acc 0.760 (ref 0.750), 16 gates left
+  pruned RY(π)[2]: acc 0.753 (ref 0.750), 15 gates left
+  pruned RZ(θ)[0]: acc 0.750 (ref 0.750), 14 gates left
+  pruned RY(θ)[0]: acc 0.758 (ref 0.750), 13 gates left
+  pruned RZ(θ)[1]: acc 0.769 (ref 0.750), 12 gates left
+  pruned RZ(θ)[3]: acc 0.746 (ref 0.750), 11 gates left
+  pruned RY(θ)[0]: acc 0.747 (ref 0.750), 10 gates left
+  QNAS-accurate: gates 41->10 | 2q 10->5 | depth 17->8
+  pruning QNAS-compact (22 gates, 5 two-qubit) ...
+  pruned SWAP[1,2]: acc 0.777 (ref 0.777), 20 gates left
+  pruned RY(π/2)[2]: acc 0.783 (ref 0.777), 19 gates left
+  pruned RZ(θ)[1]: acc 0.780 (ref 0.777), 18 gates left
+  pruned RY(θ)[3]: acc 0.773 (ref 0.777), 17 gates left
+  pruned RZ(θ)[3]: acc 0.783 (ref 0.777), 16 gates left
+  pruned RZ(θ)[2]: acc 0.778 (ref 0.777), 15 gates left
+  pruned RX(θ)[3]: acc 0.773 (ref 0.777), 14 gates left
+  pruned RY(θ)[3]: acc 0.779 (ref 0.777), 13 gates left
+  pruned RY(θ)[1]: acc 0.787 (ref 0.777), 12 gates left
+  pruned RY(θ)[2]: acc 0.777 (ref 0.777), 11 gates left
+  pruned RY(θ)[3]: acc 0.781 (ref 0.777), 10 gates left
+  pruned RX(θ)[1]: acc 0.786 (ref 0.777), 9 gates left
+  pruned RY(θ)[1]: acc 0.773 (ref 0.777), 8 gates left
+  QNAS-compact: gates 22->8 | 2q 5->4 | depth 11->6
+final evaluation: 75 training runs (30 epochs each) on 2 worker(s)
+  7/75 runs done
+  14/75 runs done
+  21/75 runs done
+  28/75 runs done
+  35/75 runs done
+  42/75 runs done
+  49/75 runs done
+  56/75 runs done
+  63/75 runs done
+  70/75 runs done
+  75/75 runs done
+  SEL-L3         test acc  83.9% ± 0.9 | 2q 12 | depth 19 | params  38
+  QNAS-accurate-full test acc  83.6% ± 0.8 | 2q 10 | depth 16 | params  26
+  SEL-L2         test acc  80.4% ± 1.3 | 2q  8 | depth 12 | params  26
+  MLP-SEL2       test acc  79.9% ± 3.3 | 2q  0 | depth  0 | params  25
+  MLP-matched    test acc  79.0% ± 3.2 | 2q  0 | depth  0 | params  13
+  QNAS-compact   test acc  77.1% ± 1.4 | 2q  4 | depth  6 | params   5
+  QNAS-compact-full test acc  76.3% ± 2.0 | 2q  5 | depth 11 | params  16
+  QNAS-accurate  test acc  73.9% ± 0.7 | 2q  5 | depth  8 | params   7
+  QNAS-bestF     test acc  73.1% ± 0.6 | 2q  1 | depth  2 | params   3
+  QNAS-bestF-full test acc  72.6% ± 1.8 | 2q  1 | depth  3 | params   8
+  Linear         test acc  67.9% ± 1.0 | 2q  0 | depth  0 | params   5
+  SEL-L1         test acc  60.6% ± 4.8 | 2q  4 | depth  7 | params  14
+  BEL-L2         test acc  55.6% ± 1.9 | 2q  8 | depth 10 | params  10
+  BEL-L3         test acc  50.4% ± 6.2 | 2q 12 | depth 15 | params  14
+  BEL-L1         test acc  48.3% ± 2.0 | 2q  4 | depth  5 | params   6
+barren-plateau scan ...
+  n=2 SEL, 2 layers (shallow)                    cost=z0       Var[grad]=6.337e-02
+  n=2 SEL, 2 layers (shallow)                    cost=global_z Var[grad]=6.606e-02
+  n=2 SEL, n layers (depth grows with qubits)    cost=z0       Var[grad]=6.337e-02
+  n=2 SEL, n layers (depth grows with qubits)    cost=global_z Var[grad]=6.606e-02
+  n=4 SEL, 2 layers (shallow)                    cost=z0       Var[grad]=1.418e-02
+  n=4 SEL, 2 layers (shallow)                    cost=global_z Var[grad]=1.311e-02
+  n=4 SEL, n layers (depth grows with qubits)    cost=z0       Var[grad]=2.585e-02
+  n=4 SEL, n layers (depth grows with qubits)    cost=global_z Var[grad]=2.364e-02
+  n=6 SEL, 2 layers (shallow)                    cost=z0       Var[grad]=6.603e-03
+  n=6 SEL, 2 layers (shallow)                    cost=global_z Var[grad]=1.707e-02
+  n=6 SEL, n layers (depth grows with qubits)    cost=z0       Var[grad]=6.794e-03
+  n=6 SEL, n layers (depth grows with qubits)    cost=global_z Var[grad]=6.720e-03
+  n=8 SEL, 2 layers (shallow)                    cost=z0       Var[grad]=1.059e-03
+  n=8 SEL, 2 layers (shallow)                    cost=global_z Var[grad]=1.041e-03
+  n=8 SEL, n layers (depth grows with qubits)    cost=z0       Var[grad]=1.785e-03
+  n=8 SEL, n layers (depth grows with qubits)    cost=global_z Var[grad]=1.707e-03
+  n=10 SEL, 2 layers (shallow)                    cost=z0       Var[grad]=3.444e-04
+  n=10 SEL, 2 layers (shallow)                    cost=global_z Var[grad]=2.324e-03
+  n=10 SEL, n layers (depth grows with qubits)    cost=z0       Var[grad]=4.520e-04
+  n=10 SEL, n layers (depth grows with qubits)    cost=global_z Var[grad]=4.441e-04
+noisy-hardware sweep (default.mixed) ...
+  QNAS-bestF     p=0      acc 0.687
+  QNAS-bestF     p=0.03   acc 0.693
+  QNAS-accurate  p=0      acc 0.720
+  QNAS-accurate  p=0.03   acc 0.627
+  QNAS-compact   p=0      acc 0.700
+  QNAS-compact   p=0.03   acc 0.627
+  SEL-L2         p=0      acc 0.787
+  SEL-L2         p=0.03   acc 0.493
+  BEL-L2         p=0      acc 0.580
+  BEL-L2         p=0.03   acc 0.507
+done in 1407s -> runs/standard/results.md

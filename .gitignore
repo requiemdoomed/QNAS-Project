@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.venv/
+venv/
+
+# Large or machine-specific run files (results, figures and JSON stay in git)
+runs/**/cache/
+runs/**/search/checkpoint.pkl
+runs/**/search/checkpoint.pkl.tmp
+
+# Datasets you download yourself (e.g. data/pneumoniamnist.npz)
+data/*.npz
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store

@@ -1,0 +1,152 @@
+[
+  {
+    "circuit": "QNAS-bestF",
+    "p_1q": 0.0,
+    "p_2q": 0.0,
+    "accuracy": 0.6866666666666666
+  },
+  {
+    "circuit": "QNAS-bestF",
+    "p_1q": 0.001,
+    "p_2q": 0.01,
+    "accuracy": 0.6866666666666666
+  },
+  {
+    "circuit": "QNAS-bestF",
+    "p_1q": 0.003,
+    "p_2q": 0.03,
+    "accuracy": 0.6933333333333334
+  },
+  {
+    "circuit": "QNAS-bestF",
+    "p_1q": 0.01,
+    "p_2q": 0.1,
+    "accuracy": 0.7
+  },
+  {
+    "circuit": "QNAS-bestF",
+    "p_1q": 0.03,
+    "p_2q": 0.3,
+    "accuracy": 0.6933333333333334
+  },
+  {
+    "circuit": "QNAS-accurate",
+    "p_1q": 0.0,
+    "p_2q": 0.0,
+    "accuracy": 0.72
+  },
+  {
+    "circuit": "QNAS-accurate",
+    "p_1q": 0.001,
+    "p_2q": 0.01,
+    "accuracy": 0.72
+  },
+  {
+    "circuit": "QNAS-accurate",
+    "p_1q": 0.003,
+    "p_2q": 0.03,
+    "accuracy": 0.7266666666666667
+  },
+  {
+    "circuit": "QNAS-accurate",
+    "p_1q": 0.01,
+    "p_2q": 0.1,
+    "accuracy": 0.7066666666666667
+  },
+  {
+    "circuit": "QNAS-accurate",
+    "p_1q": 0.03,
+    "p_2q": 0.3,
+    "accuracy": 0.6266666666666667
+  },
+  {
+    "circuit": "QNAS-compact",
+    "p_1q": 0.0,
+    "p_2q": 0.0,
+    "accuracy": 0.7
+  },
+  {
+    "circuit": "QNAS-compact",
+    "p_1q": 0.001,
+    "p_2q": 0.01,
+    "accuracy": 0.6933333333333334
+  },
+  {
+    "circuit": "QNAS-compact",
+    "p_1q": 0.003,
+    "p_2q": 0.03,
+    "accuracy": 0.7066666666666667
+  },
+  {
+    "circuit": "QNAS-compact",
+    "p_1q": 0.01,
+    "p_2q": 0.1,
+    "accuracy": 0.7133333333333334
+  },
+  {
+    "circuit": "QNAS-compact",
+    "p_1q": 0.03,
+    "p_2q": 0.3,
+    "accuracy": 0.6266666666666667
+  },
+  {
+    "circuit": "SEL-L2",
+    "p_1q": 0.0,
+    "p_2q": 0.0,
+    "accuracy": 0.7866666666666666
+  },
+  {
+    "circuit": "SEL-L2",
+    "p_1q": 0.001,
+    "p_2q": 0.01,
+    "accuracy": 0.78
+  },
+  {
+    "circuit": "SEL-L2",
+    "p_1q": 0.003,
+    "p_2q": 0.03,
+    "accuracy": 0.7866666666666666
+  },
+  {
+    "circuit": "SEL-L2",
+    "p_1q": 0.01,
+    "p_2q": 0.1,
+    "accuracy": 0.7866666666666666
+  },
+  {
+    "circuit": "SEL-L2",
+    "p_1q": 0.03,
+    "p_2q": 0.3,
+    "accuracy": 0.49333333333333335
+  },
+  {
+    "circuit": "BEL-L2",
+    "p_1q": 0.0,
+    "p_2q": 0.0,
+    "accuracy": 0.58
+  },
+  {
+    "circuit": "BEL-L2",
+    "p_1q": 0.001,
+    "p_2q": 0.01,
+    "accuracy": 0.58
+  },
+  {
+    "circuit": "BEL-L2",
+    "p_1q": 0.003,
+    "p_2q": 0.03,
+    "accuracy": 0.5866666666666667
+  },
+  {
+    "circuit": "BEL-L2",
+    "p_1q": 0.01,
+    "p_2q": 0.1,
+    "accuracy": 0.5333333333333333
+  },
+  {
+    "circuit": "BEL-L2",
+    "p_1q": 0.03,
+    "p_2q": 0.3,
+    "accuracy": 0.5066666666666667
+  }
+]
