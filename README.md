@@ -281,9 +281,6 @@ python -m pytest -q
 - Four qubits is a small scale. Barren-plateau and noise conclusions are trends, not hardware results.
 - Small classical networks are competitive, so this is not a demonstration of quantum advantage.
 
-The full discussion is in the final report (`QNAS_Final_Project_Report.docx`, distributed separately)
-and in [`runs/standard/results.md`](runs/standard/results.md).
-
 ---
 
 ## Citing and license
