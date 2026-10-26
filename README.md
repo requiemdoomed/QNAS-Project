@@ -1,6 +1,6 @@
-# QNAS — Evolutionary Discovery of Efficient Quantum Circuits
+# QNAS(Quantum Neural Architecture Search) — Evolutionary Discovery of Efficient Quantum Circuits
 
-**Author:** Swayam Shakya  ·  **Version:** 1.1.0  ·  **License:** MIT  ·  Python ≥ 3.10  ·  CPU only
+**Author:** Swayam Shakya  ·  Python ≥ 3.10  ·  CPU only
 
 QNAS uses a **genetic algorithm to design quantum circuits**. It decides which gates go on which
 qubits in a variational quantum classifier. It looks for circuits that are accurate **and** cheap
@@ -17,21 +17,7 @@ needed. All numbers below come from the real runs saved in [`runs/`](runs/).
 
 ---
 
-## Contents
-1. [The idea in one picture](#1-the-idea-in-one-picture)
-2. [Quick start (5 minutes)](#2-quick-start-5-minutes)
-3. [What was done, step by step](#3-what-was-done-step-by-step)
-4. [Results](#4-results)
-5. [Demo walkthrough](#5-demo-walkthrough)
-6. [Project layout](#6-project-layout)
-7. [Command-line reference](#7-command-line-reference)
-8. [Reproducibility and testing](#8-reproducibility-and-testing)
-9. [Limitations](#9-limitations)
-10. [Citing and license](#10-citing-and-license)
-
----
-
-## 1. The idea in one picture
+## The idea in one picture
 
 ```
  8x8 digit image ──► CNN autoencoder ──► 4 numbers ──► scaled to [0, π]
@@ -58,7 +44,7 @@ Stack: **PennyLane** (circuits) · **PyTorch** (training through `qml.qnn.TorchL
 
 ---
 
-## 2. Quick start (5 minutes)
+## Quick start 
 
 ```bash
 git clone https://github.com/<your-username>/qnas.git
@@ -82,7 +68,7 @@ python -m qnas run-all --preset standard --workers 2 --out runs/standard
 
 ---
 
-## 3. What was done, step by step
+## What was done, step by step
 
 | Stage | What happens | Output |
 |---|---|---|
@@ -104,7 +90,7 @@ F(C) = α·accuracy − β·depth/D_max − γ·N_2q/N_max      with α = 1, β 
 
 ---
 
-## 4. Results
+## Results
 
 All numbers are from [`runs/standard`](runs/standard/results.md). The search trained
 **1,176 distinct circuits in 544 s** and found a Pareto front of **9 circuits**. The whole pipeline
@@ -188,7 +174,7 @@ Column 0 is the fixed RY(xᵢ) encoding.
 
 ---
 
-## 5. Demo walkthrough
+## Demo walkthrough
 
 **a) One qubit, checked against pen and paper** (`examples/01_hello_qubit.py`)
 
@@ -231,34 +217,7 @@ Open `runs/demo/results.md` to see the generated report, with tables, p-values a
 
 ---
 
-## 6. Project layout
-
-```
-qnas/                    the library (19 modules, every file commented)
-  genome.py  space.py      genes, legality rules, repair, mutation, crossover
-  circuit.py model.py      genome -> PennyLane QNode -> PyTorch model; linear / MLP baselines
-  templates.py             SEL / BEL templates written as genomes
-  data.py                  digits, breast-cancer and MedMNIST loaders; PCA / CNN-autoencoder features
-  fitness.py evolution.py  scoring, NSGA-II / weighted GA, caching, checkpoints, parallel workers
-  pareto.py                dominance and exact hypervolume
-  simplify.py              lossless simplification and ablation pruning
-  final.py                 multi-seed retraining, test-set comparison, Welch t-tests
-  gradients.py noise.py    barren-plateau study, depolarizing-noise study
-  plots.py report.py       figures and results.md
-  pipeline.py cli.py       stage orchestration and the command line
-tests/                   35 pytest tests
-examples/                4 short runnable examples
-docs/LEARNING_GUIDE.md   quantum-ML concepts mapped to the code, with exercises
-docs/history/            log of the first (collapsed) random-start run from version 1.0
-runs/standard/           the reported experiment: results.md, figures/, raw JSON/CSV
-runs/demo/               output of `python -m qnas demo`
-runs/cold_start/         search-only run started from random circuits
-data/                    put MedMNIST .npz files here (optional)
-```
-
----
-
-## 7. Command-line reference
+## Command-line reference
 
 ```
 python -m qnas <command> [options]
@@ -294,7 +253,7 @@ python -m qnas run-all --dataset pneumoniamnist --out runs/pneumonia --workers 2
 
 ---
 
-## 8. Reproducibility and testing
+## Reproducibility and testing
 
 - **Deterministic scores.** Each circuit's training seed is derived from a SHA-1 hash of its genome.
   The same circuit therefore always gets the same score, in any worker process, in any order.
@@ -313,7 +272,7 @@ python -m pytest -q
 
 ---
 
-## 9. Limitations
+## Limitations
 
 - The planned medical dataset (PneumoniaMNIST) could not be downloaded on the machine used for these
   runs, so all results use the digits dataset. The loader is implemented and tested on a synthetic file.
@@ -327,10 +286,10 @@ and in [`runs/standard/results.md`](runs/standard/results.md).
 
 ---
 
-## 10. Citing and license
+## Citing and license
 
 If you use this code, please cite it (see [`CITATION.cff`](CITATION.cff)):
 
-> Shakya, S. (2026). *QNAS: Evolutionary Discovery of Efficient Quantum Circuits* (Version 1.1.0) [Computer software].
+> Shakya, S. (2026). *QNAS: Evolutionary Discovery of Efficient Quantum Circuits* [Computer software].
 
 Released under the [MIT License](LICENSE). Changes are listed in [`CHANGELOG.md`](CHANGELOG.md).
