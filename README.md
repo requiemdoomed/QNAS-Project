@@ -287,6 +287,6 @@ python -m pytest -q
 
 If you use this code, please cite it (see [`CITATION.cff`](CITATION.cff)):
 
-> Shakya, S. (2026). *QNAS: Evolutionary Discovery of Efficient Quantum Circuits* [Computer software].
+> Shakya, S. (2026). *QNAS: Evolutionary Discovery of Efficient Quantum Circuits* [Computer Software].
 
 Released under the [MIT License](LICENSE). Changes are listed in [`CHANGELOG.md`](CHANGELOG.md).
